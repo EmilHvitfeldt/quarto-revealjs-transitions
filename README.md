@@ -22,15 +22,15 @@ revealjs-plugins:
 ---
 ```
 
-Then add a `data-gl-transition` attribute to any slide you want to animate **into**:
+Then add a `gl-transition` attribute to any slide you want to animate **into**:
 
 ```markdown
-## My slide {data-gl-transition="crosswarp"}
+## My slide {gl-transition="crosswarp"}
 
 Slide content here.
 ```
 
-The transition plays when navigating **to** that slide. Slides without a `data-gl-transition` attribute cut instantly.
+The transition plays when navigating **to** that slide. Slides without a `gl-transition` attribute cut instantly.
 
 ## Available transitions
 
@@ -71,14 +71,14 @@ Transition names are **case-sensitive**.
 
 ## Slide backgrounds
 
-GL Transitions works with all RevealJS background types. Use the standard Quarto background attributes alongside `data-gl-transition`:
+GL Transitions works with all RevealJS background types. Use the standard Quarto background attributes alongside `gl-transition`:
 
 ```markdown
-## Color background {data-gl-transition="burn" background-color="#4a90d9"}
+## Color background {gl-transition="burn" background-color="#4a90d9"}
 
-## Image background {data-gl-transition="crosswarp" background-image="photo.jpg"}
+## Image background {gl-transition="crosswarp" background-image="photo.jpg"}
 
-## Dark slide {data-gl-transition="windowslice" background-color="#1a1a2e"}
+## Dark slide {gl-transition="windowslice" background-color="#1a1a2e"}
 ```
 
 ## How it works
