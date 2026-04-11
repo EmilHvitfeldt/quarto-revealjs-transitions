@@ -1,0 +1,71 @@
+---
+format:
+  revealjs:
+    width: 1280
+    height: 720
+    transition: none
+    include-after-body:
+      - "all-the-js-code.html"
+pagetitle: GL Transitions Demo
+echo: false
+code-line-numbers: false
+---
+
+## PuzzleRight {data-gl-transition="PuzzleRight"}
+
+```{r}
+library(ggplot2)
+ggplot(mpg, aes(displ, hwy, color = class)) +
+  geom_point(size = 3) +
+  labs(title = "Engine displacement vs highway mpg")
+```
+
+## crosswarp {data-gl-transition="crosswarp"}
+
+```{r}
+ggplot(diamonds, aes(cut, fill = cut)) +
+  geom_bar() +
+  labs(title = "Diamond counts by cut")
+```
+
+## burn0 {data-gl-transition="burn0"}
+
+```{r}
+ggplot(faithfuld, aes(eruptions, waiting)) +
+  geom_tile(aes(fill = density)) +
+  scale_fill_viridis_c() +
+  labs(title = "Old Faithful eruption density")
+```
+
+## StarWipe {data-gl-transition="StarWipe"}
+
+```{r}
+ggplot(mpg, aes(hwy)) +
+  geom_histogram(bins = 30, fill = "steelblue", color = "white") +
+  labs(title = "Distribution of highway mpg")
+```
+
+## Color background {data-gl-transition="crosswarp" background-color="#4a90d9"}
+
+This slide has a solid **blue** background color.
+
+## Gradient background {data-gl-transition="burn0" background-color="#e8a838"}
+
+This slide has a solid **orange** background color.
+
+## Dark background with plot {data-gl-transition="windowslice" background-color="#1a1a2e"}
+
+```{r}
+ggplot(mpg, aes(displ, hwy)) +
+  geom_point(color = "#e8a838", size = 2, alpha = 0.8) +
+  theme_dark() +
+  labs(title = "Dark theme plot on dark slide")
+```
+
+## Image background {data-gl-transition="zoomInOut" background-image="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1280&h=720&fit=crop" background-opacity="0.4"}
+
+Text overlaid on an **image background**.
+
+## Back to white {data-gl-transition="wipeRight"}
+
+Plain slide after all the backgrounds — checking the transition lands cleanly.
