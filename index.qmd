@@ -4,8 +4,8 @@ format:
     width: 1280
     height: 720
     transition: none
-    include-after-body:
-      - "all-the-js-code.html"
+revealjs-plugins:
+  - gl-transitions
 pagetitle: GL Transitions Demo
 echo: false
 code-line-numbers: false
