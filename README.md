@@ -2,6 +2,8 @@
 
 A Quarto RevealJS extension that adds GPU-accelerated slide transitions using [GL Transitions](https://gl-transitions.com/) — a library of 100+ GLSL fragment shader transitions.
 
+![](transitions.webp)
+
 ## Installation
 
 ```bash
